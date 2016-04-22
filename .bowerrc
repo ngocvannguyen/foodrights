@@ -1,0 +1,11 @@
+{
+  "directory": "bower_components",
+  "json": "bower.json",
+  "strict-ssl": false,
+  "registry" : {
+    "search" : [ "http://bowerregistry.int.corp.sun","http://bower.herokuapp.com/" ],
+    "register" : "http://bowerregistry.int.corp.sun"
+  },
+  "http-proxy": "http://localhost:3128",
+  "https-proxy": "http://localhost:3128"
+}
