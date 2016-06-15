@@ -1,11 +1,11 @@
 {
   "name": "foodrights",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "~3.4.4"
+  },
   "scripts": {
-    "ci": "bower install && typings install && gulp && gulp test && gulp protractor",
-    "typings": "typings install",
-    "gulp": "gulp"
+    "build": "bower install && typings install && gulp"
   },
   "devDependencies": {
     "browser-sync": "~2.9.11",
