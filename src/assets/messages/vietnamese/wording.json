@@ -1,15 +1,15 @@
 {
-    "title": "LƯƠNG THƯC QUYỀN",
+    "title": "LƯƠNG THỰC QUYỀN",
     "language": {
       "self": "vietnamese",
       "other": "english"
     },
     "menu": {
-        "home": "TRANG NHA",
-        "visit": "LIEN HE",
-        "about": "CHUNG TOI",
-        "community": "CONG DONG",
-        "season": "THANG NAY AN GI...."
+        "home": "TRANG NHÀ",
+        "visit": "LIÊN HỆ",
+        "about": "CHÚNG TÔI LÀ AI",
+        "community": "CỘNG ĐỒNG",
+        "season": "THÁNG NÀY ĂN GÌ..."
     },
     "about": {
       "value": {
