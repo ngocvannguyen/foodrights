@@ -8,8 +8,9 @@ import { AboutController } from './components/about/about.controller';
 import { VisitController } from './components/visit/visit.controller';
 import { CommunityController } from './components/community/community.controller';
 import { SeasonController } from './components/season/season.controller';
-
 import {menu} from "./common/directives/menu/menu.directive";
+import {language} from "./common/directives/language/language.directive";
+import {WordingService} from "./common/services/wording.service";
 
 declare var moment: moment.MomentStatic;
 
@@ -18,13 +19,15 @@ module app {
 
   angular.module('app', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'toastr'])
     .constant('moment', moment)
+    .service('wordingService', WordingService)
     .config(config)
     .config(routerConfig)
     .run(runBlock)
-      .controller('MainController', MainController)
-      .controller('AboutController', AboutController)
-      .controller('VisitController', VisitController)
-      .controller('CommunityController', CommunityController)
-      .controller('SeasonController', SeasonController)
-      .directive('menu', menu);
+    .controller('MainController', MainController)
+    .controller('AboutController', AboutController)
+    .controller('VisitController', VisitController)
+    .controller('CommunityController', CommunityController)
+    .controller('SeasonController', SeasonController)
+    .directive('menu', menu)
+    .directive('language', language);
 }

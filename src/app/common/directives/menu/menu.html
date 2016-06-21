@@ -1,7 +1,7 @@
 <div class="row content menu">
     <div class="col-xs-12">
         <div class="btn-group">
-            <button type="button" class="btn btn-default" ng-class="{'active': isActive('#/home'), 'active': isActive('#/')}" ng-click="home()">HOME</button>
+            <button type="button" class="btn btn-default" ng-class="{'active': isActive('#/home') || isActive('#/')}" ng-click="home()">HOME</button>
             <button type="button" class="btn btn-default" ng-class="{'active': isActive('#/about')}" ng-click="about()">ABOUT US</button>
             <button type="button" class="btn btn-default" ng-class="{'active': isActive('#/visit')}" ng-click="visit()">VISIT US</button>
             <button type="button" class="btn btn-default" ng-class="{'active': isActive('#/community')}"  ng-click="community()">COMMUNITY</button>

@@ -13,6 +13,10 @@
   padding: 0.2em 0;
 }
 
+* {
+  font-family: Arial, sans-serif;
+}
+
 body {
   margin: 0;
   background: url("../assets/images/sa_pa_terraces.jpg");
@@ -30,10 +34,23 @@ hr {
   margin-bottom: 8px;
 }
 
-.header {
+.title {
   text-align: center;
   font-weight: bold;
   font-size: 28px;
+  padding: 5px;
+}
+
+.header {
+  color: #5E731E;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.sub-header {
+  font-weight: bold;
+  font-size: 23px;
+  color: #5E731E;
   margin-top: 35px;
   margin-bottom: 10px;
 }
@@ -78,10 +95,16 @@ hr {
   background-color: @dark-green-color;
   border-color: @green-color;
   font-size: 15px;
-  width: 244px;
 }
 
+.page-container {
+  padding: 10px;
+  margin: 10px;
+}
 
+.language {
+  text-align: right;
+}
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your less files automatically */
 // injector

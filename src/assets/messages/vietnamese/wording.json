@@ -1,0 +1,27 @@
+{
+    "title": "LƯƠNG THƯC QUYỀN",
+    "language": {
+      "self": "vietnamese",
+      "other": "english"
+    },
+    "menu": {
+        "home": "TRANG NHA",
+        "visit": "LIEN HE",
+        "about": "CHUNG TOI",
+        "community": "CONG DONG",
+        "season": "THANG NAY AN GI...."
+    },
+    "about": {
+      "value": {
+        "title": "Our Values",
+        "independent": "Independent",
+        "informative": "Informative",
+        "engaging": "Engaging",
+        "integrity": "Integrity"
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "Foods should aim to be healthy: clean, natural and enjoyable as a pleasure in life and that every individual, every community no matter how big or small has the rights to enjoy food the way foods aims to be/bring good health."
+      }
+    }
+}

@@ -3,30 +3,26 @@ export function menu():angular.IDirective {
     restrict: 'E',
     replace: true,
     templateUrl: 'app/common/directives/menu/menu.html',
-    link: function(scope:angular.IScope, el:angular.IAugmentedJQuery, attrs:ITooltipAttributes, $window:ng.IWindowService) {
-            scope['home'] = function () {
+    link: function($scope:angular.IScope, $window:ng.IWindowService) {
+            $scope['home'] = function () {
                 window.location.href = "#/home";
             };
-            scope['about'] = function () {
+            $scope['about'] = function () {
                 window.location.href = "#/about";
             };
-            scope['visit'] = function () {
+            $scope['visit'] = function () {
                 window.location.href = "#/visit";
             };
-            scope['community'] = function () {
+            $scope['community'] = function () {
                 window.location.href = "#/community";
             };
-            scope['season'] = function () {
+            $scope['season'] = function () {
                 window.location.href = "#/season";
             };
-            scope['isActive'] = function (pageLocation:String) {
+            $scope['isActive'] = function (pageLocation:String) {
                 let active = (pageLocation === window.location.hash);
                 return active;
             }
         }
   };
-}
-
-interface ITooltipAttributes extends angular.IAttributes {
-  name: string;
 }

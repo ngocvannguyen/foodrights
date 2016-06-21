@@ -25,17 +25,20 @@
     <![endif]-->
 
     <div class="container-fluid">
-      <div class="row content">
-        <div class="col-xs-12 header">
-            FOODRIGHTS
+      <div class="page-container">
+        <language></language>
+        <div class="row content">
+          <div class="col-xs-12 title">
+              {{ wording.title }}
+          </div>
+        <menu></menu>
+        <div class="row content">
+          <div class="col-xs-12">
+            <hr>
+          </div>
         </div>
-      <menu></menu>
-      <div class="row content">
-        <div class="col-xs-12">
-          <hr>
-        </div>
+        <div ng-view></div>
       </div>
-      <div ng-view></div>
     </div>
 
 
