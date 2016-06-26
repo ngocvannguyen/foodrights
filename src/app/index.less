@@ -4,7 +4,9 @@
 // endbower
 @white-color: #ffffff;
 @green-color: #CCDC9B;
+@season-background-color: @white-color;
 @dark-green-color: #365836;
+@light-green-color: #5E731E;
 
 .browsehappy {
   margin: 0.2em 0;
@@ -34,6 +36,10 @@ hr {
   margin-bottom: 8px;
 }
 
+a {
+  color: @light-green-color;
+}
+
 .title {
   text-align: center;
   font-weight: bold;
@@ -42,15 +48,15 @@ hr {
 }
 
 .header {
-  color: #5E731E;
+  color: @light-green-color;
   font-weight: bold;
   font-size: 25px;
 }
 
 .sub-header {
   font-weight: bold;
-  font-size: 23px;
-  color: #5E731E;
+  font-size: 20px;
+  color: @light-green-color;
   margin-top: 35px;
   margin-bottom: 10px;
 }
@@ -81,14 +87,21 @@ hr {
 }
 
 .season {
-  background-color: @green-color;
+  background-color: @season-background-color;
   margin: 0px 0px 6px 0px;
+}
+
+.season-text-main {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15%;
+  color: @light-green-color;
 }
 
 .season-text {
   text-align: center;
   font-size: 50px;
-  margin-top: 15%;
+  color: @light-green-color;
 }
 .btn-group {
   width: 100%;
@@ -108,6 +121,15 @@ hr {
 .page-container {
   padding: 10px;
   margin: 10px;
+}
+
+.panel-body {
+  padding: 0px;
+}
+
+.panel-primary > .panel-heading {
+  background-color: @dark-green-color;
+  border-color: @dark-green-color;
 }
 
 .language {

@@ -23,5 +23,21 @@
         "title": "Our Vision",
         "text": "Foods should aim to be healthy: clean, natural and enjoyable as a pleasure in life and that every individual, every community no matter how big or small has the rights to enjoy food the way foods aims to be/bring good health."
       }
+    },
+    "season": {
+      "fruit": "RÂU & TRÁI CÂY",
+      "meat": "THỊT TƯƠI",
+      "seafood": "HẢI SẢN",
+      "seafood_month": "HẢI SẢN THÁNG NÀY",
+      "spice": "GIA VỊ",
+      "where_to_buy": "MUA Ở ĐÂU?",
+      "where_to_eat": "ĂN Ở ĐÂU?",
+      "why": "TẠI SAO?",
+      "shop": "SIÊU THỊ",
+      "restaurant": "NHÀ HÀNG"
+    },
+    "community": {
+      "australia": "ÚC CHÂU",
+      "melbourne": "MELBOURNE"
     }
 }

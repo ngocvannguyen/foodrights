@@ -11,6 +11,7 @@ import { SeasonController } from './components/season/season.controller';
 import {menu} from "./common/directives/menu/menu.directive";
 import {language} from "./common/directives/language/language.directive";
 import {WordingService} from "./common/services/wording.service";
+import {SeafoodController} from "./components/season/seafood/seafood.controller";
 
 declare var moment: moment.MomentStatic;
 
@@ -28,6 +29,7 @@ module app {
     .controller('VisitController', VisitController)
     .controller('CommunityController', CommunityController)
     .controller('SeasonController', SeasonController)
+    .controller('SeafoodController', SeafoodController)
     .directive('menu', menu)
     .directive('language', language);
 }

@@ -1,6 +1,39 @@
-<div class="row content">
-    <div class="col-xs-12">
-      Season
+<div class="row content season">
+    <div class="col-xs-12 season-text">
+        {{wording.menu.season}}
     </div>
 </div>
-
+<div class="row content">
+    <div class="col-xs-3 sub-header">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ wording.season.fruit }}</div>
+                <div class="panel-body"><img src="assets/images/fruit.jpg" class="img-rounded" alt="Fruit" width="200px" height="200px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 sub-header">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ wording.season.seafood }}</div>
+                <div class="panel-body"><img src="assets/images/seafood.png" class="img-rounded" alt="Seafood" width="200px" height="200px" ng-click="season.seafood()"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 sub-header">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ wording.season.meat }}</div>
+                <div class="panel-body"><img src="assets/images/meat.jpg" class="img-rounded" alt="Meat" width="200px" height="200px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 sub-header">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ wording.season.spice }}</div>
+                <div class="panel-body"><img src="assets/images/spice.png" class="img-rounded" alt="Spice" width="200px" height="200px"></div>
+            </div>
+        </div>
+    </div>
+</div>

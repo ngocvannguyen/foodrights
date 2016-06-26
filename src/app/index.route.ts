@@ -11,26 +11,41 @@ export function routerConfig($routeProvider: angular.route.IRouteProvider) {
       controller: 'MainController',
       controllerAs: 'main'
     })
-      .when('/about', {
-          templateUrl: 'app/components/about/about.html',
-          controller: 'AboutController',
-          controllerAs: 'about'
-      })
-      .when('/visit', {
-          templateUrl: 'app/components/visit/visit.html',
-          controller: 'VisitController',
-          controllerAs: 'visit'
-      })
-      .when('/season', {
-          templateUrl: 'app/components/season/season.html',
-          controller: 'SeasonController',
-          controllerAs: 'season'
-      })
-      .when('/community', {
-          templateUrl: 'app/components/community/community.html',
-          controller: 'CommunityController',
-          controllerAs: 'community'
-      })
+    .when('/about', {
+      templateUrl: 'app/components/about/about.html',
+      controller: 'AboutController',
+      controllerAs: 'about'
+    })
+    .when('/visit', {
+      templateUrl: 'app/components/visit/visit.html',
+      controller: 'VisitController',
+      controllerAs: 'visit'
+    })
+    .when('/season', {
+      templateUrl: 'app/components/season/season.html',
+      controller: 'SeasonController',
+      controllerAs: 'season'
+    })
+    .when('/community', {
+      templateUrl: 'app/components/community/community.html',
+      controller: 'CommunityController',
+      controllerAs: 'community'
+    })
+    .when('/seafood', {
+      templateUrl: 'app/components/season/seafood/seafood.html',
+      controller: 'SeafoodController',
+      controllerAs: 'seafood'
+    })
+    .when('/seafoodLocation', {
+      templateUrl: 'app/components/season/seafood/location/location.html',
+      controller: 'SeafoodController',
+      controllerAs: 'seafood'
+    })
+    .when('/seafoodReason', {
+      templateUrl: 'app/components/season/seafood/reason/reason.html',
+      controller: 'SeafoodController',
+      controllerAs: 'seafood'
+    })
     .otherwise({
       redirectTo: '/'
     });
