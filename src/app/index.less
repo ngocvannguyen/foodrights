@@ -43,7 +43,7 @@ a {
 .title {
   text-align: center;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 30px;
   padding: 5px;
 }
 
@@ -57,7 +57,7 @@ a {
   font-weight: bold;
   font-size: 20px;
   color: @light-green-color;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
@@ -70,20 +70,11 @@ a {
   background-color: @white-color;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-      height: 400px;
-  }
-
-.carousel-control {
-  width: 10%;
-}
 .container-fluid {
   background-color: @white-color;
   margin-right: 20%;
   margin-left: 20%;
+  border-radius: 20px;
 }
 
 .season {
@@ -94,13 +85,13 @@ a {
 .season-text-main {
   text-align: center;
   font-size: 50px;
-  margin-top: 15%;
+  margin-top: 10%;
   color: @light-green-color;
 }
 
 .season-text {
   text-align: center;
-  font-size: 50px;
+  font-size: 35px;
   color: @light-green-color;
 }
 .btn-group {
@@ -123,18 +114,41 @@ a {
   margin: 10px;
 }
 
+.panel {
+  margin-bottom: 0px;
+}
+
 .panel-body {
   padding: 0px;
+}
+
+.panel-primary {
+  height: 100%;
 }
 
 .panel-primary > .panel-heading {
   background-color: @dark-green-color;
   border-color: @dark-green-color;
+  text-align: center;
 }
 
 .language {
   text-align: right;
 }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+.carousel-img {
+  max-height: 300px;
+  margin:0 auto;
+}
+
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your less files automatically */
 // injector

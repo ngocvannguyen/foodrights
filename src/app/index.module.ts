@@ -18,7 +18,7 @@ declare var moment: moment.MomentStatic;
 module app {
   'use strict';
 
-  angular.module('app', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'toastr'])
+  angular.module('app', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ui.bootstrap'])
     .constant('moment', moment)
     .service('wordingService', WordingService)
     .config(config)

@@ -95,19 +95,4 @@ gulp.task('clean', function () {
   return $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/partials'), path.join(conf.paths.tmp, '/serve')]);
 });
 
-gulp.task('config', function () {
-  var tsFilter = $.filter('**/*.ts', {restore: true});
-  gulp.src(path.join(conf.paths.src, '/config/**/*'))
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/config')));
-});
-
-gulp.task('generateInfo', function () {
-  var buildNumber = process.env.BUILD_NUMBER || 'dev';
-  var info = {
-    build: buildNumber
-  };
-  return file('info.json', JSON.stringify(info), {src: true})
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/')));
-});
-
-gulp.task('build', ['html', 'fonts', 'other','config', 'generateInfo']);
+gulp.task('build', ['html', 'fonts', 'other']);
