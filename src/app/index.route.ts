@@ -46,6 +46,11 @@ export function routerConfig($routeProvider: angular.route.IRouteProvider) {
       controller: 'SeafoodController',
       controllerAs: 'seafood'
     })
+    .when('/progress', {
+      templateUrl: 'app/components/progress/progress.html',
+      controller: 'ProgressController',
+      controllerAs: 'progress'
+    })
     .otherwise({
       redirectTo: '/'
     });

@@ -21,4 +21,8 @@ export class MainController {
   season() {
     this.$window.location.href ="#/season";
   }
+  progress() {
+    this.$window.location.href ="#/progress";
+  }
+
 }

@@ -12,6 +12,7 @@ import {menu} from "./common/directives/menu/menu.directive";
 import {language} from "./common/directives/language/language.directive";
 import {WordingService} from "./common/services/wording.service";
 import {SeafoodController} from "./components/season/seafood/seafood.controller";
+import {ProgressController} from "./components/progress/progress.controller";
 import {EmailService} from "./common/services/email.service";
 
 declare var moment: moment.MomentStatic;
@@ -32,6 +33,7 @@ module app {
     .controller('CommunityController', CommunityController)
     .controller('SeasonController', SeasonController)
     .controller('SeafoodController', SeafoodController)
+    .controller('ProgressController', ProgressController)
     .directive('menu', menu)
     .directive('language', language);
 }

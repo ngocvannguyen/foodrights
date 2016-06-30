@@ -45,7 +45,6 @@ function webpackWrapper(watch, test, callback) {
   var sources = [ path.join(conf.paths.src, '/app/index.module.ts') ];
   if (test) {
     sources.push(path.join(conf.paths.src, '/app/**/*.spec.ts'));
-    sources.push(path.join(conf.paths.src, '/config/local/config.js'));
   }
 
   return gulp.src(sources)
