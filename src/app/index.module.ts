@@ -12,6 +12,7 @@ import {menu} from "./common/directives/menu/menu.directive";
 import {language} from "./common/directives/language/language.directive";
 import {WordingService} from "./common/services/wording.service";
 import {SeafoodController} from "./components/season/seafood/seafood.controller";
+import {EmailService} from "./common/services/email.service";
 
 declare var moment: moment.MomentStatic;
 
@@ -21,6 +22,7 @@ module app {
   angular.module('app', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ui.bootstrap'])
     .constant('moment', moment)
     .service('wordingService', WordingService)
+    .service('emailService', EmailService)
     .config(config)
     .config(routerConfig)
     .run(runBlock)

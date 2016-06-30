@@ -1,16 +1,23 @@
 <div class="row content">
+    <div class="col-xs-12 email">
+        <label for="email.firstName" class="email">First Name</label>
+        <input id="email.firstName" ng-model="visit.email.firstName" type="text" maxlength="60" class="email"/>
+
+        <label for="email.lastName">Last Name</label>
+        <input id="email.from" ng-model="visit.email.from" type="text" maxlength="60" class="email"/>
+
+        <label for="email.from">Email</label>
+        <input id="email.lastName" ng-model="visit.email.lastName" type="text" maxlength="60" class="email"/>
+
+        <label for="email.subject">Subject</label>
+        <input id="email.subject" ng-model="visit.email.subject" type="text" maxlength="60" class="email"/>
+
+        <label for="email.message">Message</label>
+        <textarea id="email.message" ng-model="visit.email.message" rows="10" cols="50" class="email"></textarea>
+    </div>
+</div>
+<div class="row content">
     <div class="col-xs-12">
-        <div id="slides_control">
-            <div>
-                <carousel interval="myInterval">
-                    <slide ng-repeat="slide in slides" active="slide.active">
-                        <img ng-src="{{slide.image}}">
-                        <div class="carousel-caption">
-                            <h4>Slide {{$index+1}}</h4>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
-        </div>
+        <button type="button" ng-click="visit.send()" class="btn btn-default">Send</button>
     </div>
 </div>
