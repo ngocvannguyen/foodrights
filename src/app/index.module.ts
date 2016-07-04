@@ -9,6 +9,7 @@ import { VisitController } from './components/visit/visit.controller';
 import { CommunityController } from './components/community/community.controller';
 import { SeasonController } from './components/season/season.controller';
 import {menu} from "./common/directives/menu/menu.directive";
+import {httpHeaderInterceptorConfig} from './index.interceptor';
 import {language} from "./common/directives/language/language.directive";
 import {WordingService} from "./common/services/wording.service";
 import {SeafoodController} from "./components/season/seafood/seafood.controller";
@@ -26,6 +27,7 @@ module app {
     .service('emailService', EmailService)
     .config(config)
     .config(routerConfig)
+    .config(httpHeaderInterceptorConfig)
     .run(runBlock)
     .controller('MainController', MainController)
     .controller('AboutController', AboutController)
