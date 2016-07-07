@@ -15,6 +15,7 @@ import {WordingService} from "./common/services/wording.service";
 import {SeafoodController} from "./components/season/seafood/seafood.controller";
 import {ProgressController} from "./components/progress/progress.controller";
 import {EmailService} from "./common/services/email.service";
+import {LoginController} from "./components/login/login.controller";
 
 declare var moment: moment.MomentStatic;
 
@@ -36,6 +37,7 @@ module app {
     .controller('SeasonController', SeasonController)
     .controller('SeafoodController', SeafoodController)
     .controller('ProgressController', ProgressController)
+      .controller('LoginController', LoginController)      
     .directive('menu', menu)
     .directive('language', language);
 }

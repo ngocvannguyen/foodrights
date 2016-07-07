@@ -5,3 +5,8 @@ export class Email {
   public message:string;
   public subject:string;
 }
+
+export class User {
+  public id:string;
+  public password:string;
+}

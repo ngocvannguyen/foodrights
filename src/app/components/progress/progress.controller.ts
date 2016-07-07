@@ -35,7 +35,7 @@ export class ProgressController {
       },
       {
         image: 'assets/images/progress/part1/Slide11.JPG'
-      }
+      },
       {
         image: 'assets/images/progress/part2/Slide1.JPG'
       },

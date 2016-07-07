@@ -4,7 +4,7 @@ export function routerConfig($routeProvider: angular.route.IRouteProvider) {
     .when('/', {
       templateUrl: 'app/main/main.html',
       controller: 'MainController',
-      controllerAs: 'main',
+      controllerAs: 'main'
     })
     .when('/home', {
       templateUrl: 'app/main/main.html',
@@ -51,6 +51,11 @@ export function routerConfig($routeProvider: angular.route.IRouteProvider) {
       controller: 'ProgressController',
       controllerAs: 'progress'
     })
+      .when('/login', {
+          templateUrl: 'app/components/login/login.html',
+          controller: 'LoginController',
+          controllerAs: 'login'
+      })
     .otherwise({
       redirectTo: '/'
     });
