@@ -12,6 +12,7 @@ import {menu} from "./common/directives/menu/menu.directive";
 import {httpHeaderInterceptorConfig} from './index.interceptor';
 import {language} from "./common/directives/language/language.directive";
 import {WordingService} from "./common/services/wording.service";
+import {LoginService} from "./common/services/login.service";
 import {SeafoodController} from "./components/season/seafood/seafood.controller";
 import {ProgressController} from "./components/progress/progress.controller";
 import {EmailService} from "./common/services/email.service";
@@ -22,10 +23,11 @@ declare var moment: moment.MomentStatic;
 module app {
   'use strict';
 
-  angular.module('app', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ui.bootstrap'])
+  angular.module('app', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngRoute', 'ui.bootstrap', 'webStorageModule'])
     .constant('moment', moment)
     .service('wordingService', WordingService)
     .service('emailService', EmailService)
+      .service('loginService', LoginService)
     .config(config)
     .config(routerConfig)
     .config(httpHeaderInterceptorConfig)

@@ -1,6 +1,14 @@
+<div class="row content" ng-hide="login.error == null">
+    <div class="col-xs-12">
+        {{login.error}}
+    </div>
+</div>
+
 <div class="row content">
     <div class="col-xs-12 header">
-        Login Page
+        <input id="login.userName" ng-model="login.user.userName" maxlength="60" type="text" placeholder="User Name"/><br><br>
+        <input id="login.password" ng-model="login.user.password" maxlength="60" type="password" placeholder="Password"/><br>
+        <button type="button" ng-click="login.login()" class="btn">Login</button>
     </div>
 </div>
 

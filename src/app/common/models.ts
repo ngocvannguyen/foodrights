@@ -7,6 +7,11 @@ export class Email {
 }
 
 export class User {
-  public id:string;
+  public userName:string;
   public password:string;
+}
+
+export class Token {
+  public userName:string;
+  public expiry:string;
 }

@@ -125,7 +125,7 @@ var FoodRightApp = function() {
                     res.end("sent");
                 }
             });
-        });
+        };
 
     };
 
@@ -150,6 +150,19 @@ var FoodRightApp = function() {
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
         }
+
+        self.app.post('/api/login', function(req, res) {
+            var userName = req.body.userName;
+            var password = req.body.password;
+
+            if(userName !== "Ngoc"){
+                console.log("Fail");
+                res.send("error");
+            }else{
+                console.log("Success");
+                res.send({"userName": userName, "expiry": Date.now()});
+            }
+        });
     };
 
 
@@ -176,6 +189,7 @@ var FoodRightApp = function() {
                         Date(Date.now() ), self.ipaddress, self.port);
         });
     };
+};
 
 /*
  Here we are configuring our SMTP Server details.
